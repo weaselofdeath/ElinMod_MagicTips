@@ -8,3 +8,5 @@ Included in this repo is:
 2. The source code for this mod
 
 Feel free to use this for whatever you would like. 
+
+Want to report a change? Would like to see a new feature added? Submit an issue here: https://github.com/weaselofdeath/ElinMod_MagicTips/issues
