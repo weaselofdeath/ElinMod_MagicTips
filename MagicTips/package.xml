@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Magic Tips</title>
+  <id>magic_tips</id>
+  <author>WeaselOfDeath</author>
+  <builtin>false</builtin>
+  <loadPriority>100</loadPriority>
+  <version>0.23.99.99</version>
+  <description>.</description>
+</Meta>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicTips", "MagicTips\MagicTips.csproj", "{5EBFD3C7-8980-44C2-85BB-B3F0CFC8F2A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EBFD3C7-8980-44C2-85BB-B3F0CFC8F2A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EBFD3C7-8980-44C2-85BB-B3F0CFC8F2A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EBFD3C7-8980-44C2-85BB-B3F0CFC8F2A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EBFD3C7-8980-44C2-85BB-B3F0CFC8F2A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9847884B-44FC-41DC-BD0C-C17479C328F1}
+	EndGlobalSection
+EndGlobal
