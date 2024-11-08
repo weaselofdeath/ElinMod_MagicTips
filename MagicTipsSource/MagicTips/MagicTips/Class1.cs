@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 using BepInEx;
 using HarmonyLib;
+using UnityEngine;
 
 namespace MagicTips
 {
@@ -32,18 +27,18 @@ namespace MagicTips
             {
                 FontColor fontColor = __instance.IsCursed ? FontColor.Bad : FontColor.Great;
                 fontColor = __instance.IsBlessed ? FontColor.Myth : fontColor;
-                
-                if (__instance.trait is TraitSpellbook || __instance.trait is TraitSpellbookRandom)
+                // Switched from trait type matching to string matching since Unity gives false positives on the third case for letters and non spell books
+                if (__instance.trait.ToString() == "TraitSpellbook" || __instance.trait.ToString() is "TraitSpellbookRandom")
                 {
                     TraitSpellbook traitSpellbook = __instance.trait as TraitSpellbook;
                     AddTextForMagic(n, traitSpellbook.Name, ref __instance, traitSpellbook.source.id, fontColor);
                 }
-                else if (__instance.trait is TraitRod || __instance.trait is TraitRodRandom)
+                else if (__instance.trait.ToString() == "TraitRod" || __instance.trait.ToString() == "TraitRodRandom")
                 {
                     TraitRod traitRod = __instance.trait as TraitRod;
                     AddTextForMagic(n, traitRod.Name, ref __instance, traitRod.source.id, fontColor);
                 }
-                else if (__instance.trait is TraitScroll || __instance.trait is TraitScrollRandom)
+                else if (__instance.trait.ToString() == "TraitScroll" || __instance.trait.ToString() == "TraitScrollRandom")
                 {
                     TraitScroll traitScroll = __instance.trait as TraitScroll;
                     AddTextForMagic(n, traitScroll.Name, ref __instance, traitScroll.source.id, fontColor);
